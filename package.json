@@ -1,0 +1,26 @@
+{
+    "name": "create-react-package",
+    "version": "0.0.1",
+    "description": "Create react npm package",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "babel ./src --out-dir ./dist -s inline",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "files": [
+        "dist/*"
+    ],
+    "devDependencies": {
+        "@babel/cli": "7.2.3",
+        "@babel/core": "7.3.4",
+        "@babel/preset-env": "7.3.4",
+        "@babel/preset-react": "7.0.0",
+        "react": "16.8.4"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0"
+    }
+}
