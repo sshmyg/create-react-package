@@ -6,7 +6,7 @@
     "scripts": {
         "build": "babel ./src --out-dir ./dist -s inline",
         "test": "jest",
-        "prepublishOnly": "npm run build"
+        "prepublishOnly": "npm run test && npm run build"
     },
     "author": "",
     "license": "ISC",
@@ -21,6 +21,6 @@
         "react": "16.8.4"
     },
     "peerDependencies": {
-        "react": "^16.8.0"
+        "react": ">=16.8.0"
     }
 }
