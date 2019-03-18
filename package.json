@@ -4,7 +4,7 @@
     "description": "Create react npm package",
     "main": "dist/index.js",
     "scripts": {
-        "build": "babel ./src --out-dir ./dist -s inline",
+        "build": "babel ./src --out-dir ./dest -s inline",
         "test": "jest",
         "prepublishOnly": "npm run test && npm run build"
     },
