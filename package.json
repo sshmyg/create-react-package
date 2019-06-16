@@ -1,6 +1,6 @@
 {
     "name": "create-react-package",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "description": "Create react npm package",
     "main": "dest/create-react-package.js",
     "umd:main": "dest/create-react-package.umd.js",
