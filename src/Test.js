@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function Test() {
+export default function Test({
+    className
+}) {
     return (
-        <p>Hello world</p>
+        <p className={className}>Hello world</p>
     );
 }
