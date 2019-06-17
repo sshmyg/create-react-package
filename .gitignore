@@ -5,4 +5,4 @@ npm-debug.log
 dest
 package-lock.json
 yarn.lock
-dest/*.map
+dest

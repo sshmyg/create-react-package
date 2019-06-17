@@ -10,7 +10,7 @@
     "source": "src/index.js",
     "scripts": {
         "start": "npx microbundle watch -o dest/ --sourcemap true --no-compress",
-        "build": "rm dest/*.map && npx microbundle -o dest/ --sourcemap false",
+        "build": "npx microbundle -o dest/ --sourcemap false",
         "test": "npx jest",
         "clear": "rm -rf dest node_modules",
         "prepublishOnly": "rm -rf dest && npm run test && npm run build"
