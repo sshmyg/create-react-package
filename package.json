@@ -1,25 +1,25 @@
 {
     "name": "create-react-package",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Create react npm package",
+    "author": "",
+    "license": "ISC",
     "main": "dest/create-react-package.js",
     "umd:main": "dest/create-react-package.umd.js",
     "module": "dest/create-react-package.m.js",
     "source": "src/index.js",
     "scripts": {
-        "start": "npx microbundle watch -o dest/ --sourcemap true --compress false",
-        "build": "npx microbundle -o dest/ --sourcemap false --compress true",
+        "start": "npx microbundle watch -o dest/ --sourcemap true --no-compress",
+        "build": "rm dest/*.map && npx microbundle -o dest/ --sourcemap false",
         "test": "npx jest",
         "clear": "rm -rf dest node_modules",
-        "prepublishOnly": "npm run test && npm run build"
+        "prepublishOnly": "rm -rf dest && npm run test && npm run build"
     },
-    "author": "",
-    "license": "ISC",
     "files": [
         "dest/*"
     ],
     "engines": {
-        "node": "11.x"
+        "npm": ">=5.2.0"
     },
     "devDependencies": {
         "@babel/cli": "7.4.4",
